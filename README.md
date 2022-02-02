@@ -1,1 +1,1 @@
-Name: Heather Lee, Kwanyon Jo 
+Name: Heather Lee, Kwanyong Jo 
