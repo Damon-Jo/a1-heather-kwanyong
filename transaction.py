@@ -55,3 +55,8 @@ class Transaction:
         Set value for expense location.
         :param expense_location: a string
         """
+
+    # Properties
+    timestamp = property(get_timestamp, set_timestamp)
+    dollar_amount = property(get_dollar_amount, set_dollar_amount)
+    expense_location = property(get_expense_location, set_expense_location)
