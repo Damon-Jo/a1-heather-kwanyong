@@ -1,16 +1,10 @@
-
-
-
-
 class Bank:
 
     def __init__(self, user_list):
         self._user_list = user_list
 
-
-
     def start_menu(self):
-        while(True):
+        while True:
             print("""
                 1. Resister new user\n
                 2. Login\n
@@ -70,7 +64,3 @@ class Bank:
             self._add_user_to_list(user)
 
             return True
-
-
-
-
