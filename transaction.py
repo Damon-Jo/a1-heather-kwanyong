@@ -4,14 +4,16 @@ from datetime import datetime
 class Transaction:
     """ A transaction class."""
 
-    def __init__(self, timestamp: datetime, dollar_amount: float, expense_location: str) -> None:
+    def __init__(self, timestamp: datetime, category: int, dollar_amount: float, expense_location: str) -> None:
         """
         Initialize attributes of Transaction class.
         :param timestamp: a datetime describing the time of transaction
+        :param category: a string describing the category of the expense
         :param dollar_amount: a float describing the amount in dollar for the transaction
         :param expense_location: a string describing the location of expense
         """
         self._timestamp = timestamp
+        self._category = category
         self._dollar_amount = dollar_amount
         self._expense_location = expense_location
 
@@ -60,3 +62,4 @@ class Transaction:
     timestamp = property(get_timestamp, set_timestamp)
     dollar_amount = property(get_dollar_amount, set_dollar_amount)
     expense_location = property(get_expense_location, set_expense_location)
+
