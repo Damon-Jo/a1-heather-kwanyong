@@ -37,7 +37,7 @@ class Transaction:
         Return expense location of the transaction.
         :return: a string
         """
-        return self._expense_location
+        return self._expense_locationd
 
     # Mutator
     def set_timestamp(self, timestamp: datetime) -> None:
